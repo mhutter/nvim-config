@@ -44,6 +44,7 @@ local config = {
       spell = true, -- sets vim.opt.spell
       signcolumn = "auto", -- sets vim.opt.signcolumn to auto
       wrap = false, -- sets vim.opt.wrap
+      guifont = "DejaVuSansMono Nerd Font:h11"
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
@@ -51,6 +52,7 @@ local config = {
       autopairs_enabled = true, -- enable autopairs at start
       diagnostics_enabled = true, -- enable diagnostics at start
       status_diagnostics_enabled = true, -- enable diagnostics in statusline
+      neovide_cursor_vfx_mode = "railgun",
     },
   },
   -- If you need more control, you can use the function()...end notation
@@ -188,6 +190,10 @@ local config = {
       ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
       -- quick save
       -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+      -- Own stuff
+      ["<tab>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
+      ["<s-tab>"] = { "<cmd>bprev<cr>", desc = "Previous buffer" },
+      ["\\"] = { "<cmd>nohlsearch<cr>", desc = "Clear search highlights" }
     },
     t = {
       -- setting a mapping to false will disable it
@@ -305,6 +311,11 @@ local config = {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    vim.filetype.add {
+      filename = {
+        [".envrc"] = "sh",
+      },
+    }
   end,
 }
 
