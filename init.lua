@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "default_theme",
+  colorscheme = "sonokai",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -44,7 +44,8 @@ local config = {
       spell = true, -- sets vim.opt.spell
       signcolumn = "auto", -- sets vim.opt.signcolumn to auto
       wrap = false, -- sets vim.opt.wrap
-      guifont = "DejaVuSansMono Nerd Font:h11"
+      guifont = "DejaVuSansMono Nerd Font:h11",
+      termguicolors = true,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
@@ -206,6 +207,7 @@ local config = {
   -- Configure plugins
   plugins = {
     init = {
+      { "sainnhe/sonokai" },
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
 
