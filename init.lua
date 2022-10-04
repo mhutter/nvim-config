@@ -194,7 +194,8 @@ local config = {
       -- Own stuff
       ["<tab>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
       ["<s-tab>"] = { "<cmd>bprev<cr>", desc = "Previous buffer" },
-      ["\\"] = { "<cmd>nohlsearch<cr>", desc = "Clear search highlights" }
+      ["\\"] = { "<cmd>nohlsearch<cr>", desc = "Clear search highlights" },
+      ["<c-\\>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
     },
     t = {
       -- setting a mapping to false will disable it
