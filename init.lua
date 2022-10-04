@@ -53,6 +53,7 @@ local config = {
       diagnostics_enabled = true, -- enable diagnostics at start
       status_diagnostics_enabled = true, -- enable diagnostics in statusline
       neovide_cursor_vfx_mode = "railgun",
+      neovide_remember_window_size = false,
     },
   },
   -- If you need more control, you can use the function()...end notation
