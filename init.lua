@@ -320,6 +320,9 @@ local config = {
     --   },
     -- }
     vim.filetype.add {
+      extension = {
+        tf = "tf",
+      },
       filename = {
         [".envrc"] = "sh",
       },
