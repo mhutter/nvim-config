@@ -339,7 +339,9 @@ local config = {
     -- }
     vim.filetype.add {
       extension = {
-        tf = "tf",
+        butane = "yaml",
+        ign = "json",
+        tf = "terraform",
       },
       filename = {
         [".envrc"] = "sh",
