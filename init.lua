@@ -47,7 +47,7 @@ local config = {
       spell = false, -- sets vim.opt.spell
       signcolumn = "auto", -- sets vim.opt.signcolumn to auto
       wrap = false, -- sets vim.opt.wrap
-      guifont = "DejaVuSansMono Nerd Font:h11",
+      guifont = "Fira Code:h11:e-subpixelantialias",
       termguicolors = true,
     },
     g = {
