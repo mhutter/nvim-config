@@ -275,6 +275,9 @@ local config = {
     ["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
       -- ensure_installed = { "prettier", "stylua" },
     },
+    ["mason-nvim-dap"] = { -- overrides `require("mason-nvim-dap").setup(...)`
+      -- ensure_installed = { "python" },
+    },
   },
 
   -- LuaSnip Options
