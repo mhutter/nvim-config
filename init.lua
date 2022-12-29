@@ -343,6 +343,7 @@ local config = {
     vim.filetype.add {
       extension = {
         butane = "yaml",
+        hcl = "terraform",
         ign = "json",
         tf = "terraform",
       },
