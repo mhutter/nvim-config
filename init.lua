@@ -351,6 +351,8 @@ local config = {
         [".envrc"] = "sh",
       },
     }
+    local indent = vim.api.nvim_create_augroup("CustomIndent", {})
+    vim.api.nvim_create_autocmd("BufEnter", { pattern = "*.go", command = "set ts=8", group = indent })
   end,
 }
 
