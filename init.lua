@@ -365,7 +365,6 @@ local config = {
         butane = "yaml",
         hcl = "terraform",
         ign = "json",
-        tf = "terraform",
       },
       filename = {
         [".envrc"] = "sh",
