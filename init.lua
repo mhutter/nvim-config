@@ -192,6 +192,17 @@ local config = {
       --     },
       --   },
       -- },
+      ltex = {
+        setup = {
+          filetypes = { 'gitcommit', 'markdown', 'rst', 'asciidoc' },
+        },
+        settings = {
+          ltex = {
+            enabled = { 'gitcommit', 'markdown', 'org', 'restructuredtext', 'asciidoc' },
+            languageToolHttpServerUri = "http://localhost:8081/",
+          },
+        },
+      },
     },
   },
 
