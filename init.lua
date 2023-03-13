@@ -201,6 +201,7 @@ local config = {
           ltex = {
             enabled = { 'gitcommit', 'markdown', 'org', 'restructuredtext', 'asciidoc' },
             languageToolHttpServerUri = "http://localhost:8081/",
+            language = "auto",
           },
         },
       },
