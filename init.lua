@@ -20,18 +20,6 @@ return {
   -- Set colorscheme to use
   colorscheme = "sonokai",
 
-  -- set vim options here (vim.<first_key>.<second_key> = value)
-  options = {
-    opt = {
-      guifont = "Fira Code:h11:e-subpixelantialias",
-      termguicolors = true,
-    },
-    g = {
-      neovide_cursor_vfx_mode = "railgun",
-      neovide_remember_window_size = false,
-    },
-  },
-
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -60,17 +48,6 @@ return {
       -- end
     },
 
-    config = {
-      ltex = {
-        settings = {
-          ltex = {
-            enabled = { 'gitcommit', 'markdown', 'org', 'restructuredtext', 'asciidoc' },
-            languageToolHttpServerUri = "http://localhost:8081/",
-            language = "auto",
-          },
-        },
-      }
-    }
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
@@ -89,7 +66,6 @@ return {
           "ltex",
           "rust_analyzer",
           "terraformls",
-          "yamlls",
         },
       },
     },
