@@ -40,46 +40,17 @@ return {
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
-        -- "sumneko_lua",
+        -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
+        -- "lua_ls",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
     },
-
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-    },
-  },
-
-  plugins = {
-    { "sainnhe/sonokai" },
-    {
-      "williamboman/mason-lspconfig.nvim",
-      opts = {
-        ensure_installed = {
-          "cssls",
-          "gopls",
-          "jsonnet_ls",
-          "ltex",
-          "rust_analyzer",
-          "terraformls",
-        },
-      },
-    },
-    {
-      "zbirenbaum/copilot.lua",
-      cmd = "Copilot",
-      event = "InsertEnter",
-      config = function()
-        require("copilot").setup({
-          suggestion = {
-            auto_trigger = true,
-          },
-        })
-      end,
     },
   },
 
@@ -89,7 +60,7 @@ return {
     performance = {
       rtp = {
         -- customize default disabled vim plugins
-        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin", "matchparen" },
+        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
   },
@@ -118,6 +89,7 @@ return {
       },
       filename = {
         [".envrc"] = "sh",
+        ["Justfile"] = "make",
       },
     }
 
