@@ -61,7 +61,6 @@ return {
       },
       filename = {
         [".envrc"] = "sh",
-        ["Justfile"] = "make",
       },
     }
 

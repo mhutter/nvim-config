@@ -1,4 +1,11 @@
 return {
+  {
+    "IndianBoy42/tree-sitter-just",
+    event = "BufEnter Justfile",
+    config = function()
+      require('tree-sitter-just').setup({})
+    end
+  },
   "sainnhe/sonokai",
   "simrat39/rust-tools.nvim",
   -- You can also add new plugins here as well:
