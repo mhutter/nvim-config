@@ -57,6 +57,7 @@ return {
       extension = {
         butane = "yaml",
         hcl = "terraform",
+        tf = "terraform",
         ign = "json",
       },
       filename = {
