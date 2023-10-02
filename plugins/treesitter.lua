@@ -6,7 +6,7 @@ return {
       "go",
       "jsonnet",
       "rust",
-      -- "lua"
+      "lua",
     })
   end,
 }
