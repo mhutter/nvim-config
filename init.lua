@@ -55,10 +55,13 @@ return {
     -- }
     vim.filetype.add {
       extension = {
+        -- Butane/Ignition
+        bu = "yaml",
         butane = "yaml",
+        ign = "json",
+        -- HCL/Terraform/Packer
         hcl = "terraform",
         tf = "terraform",
-        ign = "json",
       },
       filename = {
         [".envrc"] = "sh",
