@@ -62,6 +62,7 @@ return {
         -- HCL/Terraform/Packer
         hcl = "terraform",
         tf = "terraform",
+        zone = "bindzone",
       },
       filename = {
         [".envrc"] = "sh",
