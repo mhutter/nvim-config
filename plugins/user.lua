@@ -1,10 +1,8 @@
 return {
   {
-    "IndianBoy42/tree-sitter-just",
-    event = "BufEnter Justfile",
-    config = function()
-      require('tree-sitter-just').setup({})
-    end
+    "NoahTheDuke/vim-just",
+    event = { "BufReadPre", "BufNewFile" },
+    ft = { "\\cjustfile", "*.just", ".justfile" },
   },
   "sainnhe/sonokai",
   "simrat39/rust-tools.nvim",
